@@ -23,6 +23,18 @@ public class swissArr {
             System.out.print(element1+ " ");
         }
 
+        int last = arr.length-1;
+        for (int i = 0; i < arr.length / 2; i++) {
+            int temp = arr[i];
+            arr[i]= arr[last-i];
+            arr[last-i] = temp;
+        }
+        System.out.println("\n"+ "mang moi 2 la");
+        for (int element:arr
+        ) {
+            System.out.print(element+ " ");
+        }
+
     }
     private static int[] createRandom() {
         Random rd = new Random(100);
